@@ -1,0 +1,189 @@
+* { box-sizing: border-box; margin: 0;}
+
+html { font-size: 62.5%; }
+
+:root {
+	--black : #212121;
+	--red   : #bd4b4b;
+	--pink  : #efb7b7;
+	--lgrey : #eeeeee;
+	--dgrey : #c6c6c6;
+}
+
+/* header block */
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 4rem 1rem 1rem 1rem;
+	width: 100%;
+	height: 10%;
+	background-color: white;
+}
+
+.header--p-sticky {
+	position: sticky;
+	top: 0px;
+}
+
+.header--shadow {
+	box-shadow: 4px 3px 7px 4px var(--dgrey);
+}
+
+/* nav bar */
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav__item {
+	margin: 0 3.5rem;
+}
+
+.nav__a {
+	font-family: "Manrope Light";
+	font-size: 2rem;
+	color: var(--black);
+	text-decoration: none;
+}
+
+/* blank space */
+
+.blank-space {
+	width: 100%;
+	height: 5rem;
+}
+
+.blank-space--size-big {
+	height: 10rem;
+}
+
+.blank-space--main {
+	height: 2.5rem;
+}
+
+/* grid-container block */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat( 12, 1fr);
+	padding: 1rem;
+}
+
+/* main block */
+
+.main {
+	grid-column-start: 2;
+	grid-column-end: 9;
+}
+
+/* post section/block */
+
+.post-preview {
+	display: flex;
+	padding: 2rem;
+	width: 100%;
+	height: auto;
+	background-color: var(--lgrey);
+	border-radius: .3rem;
+}
+
+/* container for title, txt and btn */
+
+.post-info {
+	padding: 0rem 1rem 0 2rem;
+}
+
+/* post content */
+
+.post-preview__title {
+	margin-bottom: 1rem;
+	font-family: 'Manrope Medium';
+	font-size: 1.8rem;
+}
+
+.post-preview__txt {
+	font-family: 'Manrope ExtraLight';
+	font-size: 1.6rem;
+	text-align: justify;
+}
+
+.post-preview__img {
+	width: 20vw;
+	border-radius: .3rem;
+}
+
+.btn-more {
+	font-family: 'Manrope Regular';
+	border-radius: .4rem;
+}
+
+.post-preview__btn-more {
+	margin-top: 1rem;
+	padding: .4rem 1rem;
+	color: whitesmoke;
+	background-color: var(--red);
+	border: transparent 1px;
+	float: right;
+}
+
+.btn-more:hover {
+	cursor: pointer;
+}
+
+/* contents block */
+
+.contents {
+	grid-column-start: 10;
+	grid-column-end: 12;
+
+	padding: 2rem;
+	height: 50%;
+
+	background-color: var(--lgrey);
+	border-radius: .4rem;
+}
+
+.contents__title {
+	padding-bottom: 1rem;
+	width: 100%;
+	font-family: 'Manrope Medium';
+	font-size: 1.8rem;
+}
+
+.contents__list {
+	/*list-style-type: "\027A4";*/
+	list-style-type: "--  ";
+}
+
+.contents__item {
+	margin: 0 0 .5rem 0;
+	font-family: 'Manrope Light';
+	font-size: 1.6rem;
+}
+
+/* footer block */
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 20vw;
+	background-color: var(--black);
+}
+
+.socials {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+}
+
+.socials__logo {
+	margin: 0 1rem;
+	width: 2.5rem;
+}

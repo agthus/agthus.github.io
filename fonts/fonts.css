@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "Manrope ExtraLight";
+	src: url("static/Manrope-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "Manrope Light";
+	src: url("static/Manrope-Light.ttf");
+}
+
+@font-face {
+	font-family: "Manrope Regular";
+	src: url("static/Manrope-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Manrope Medium";
+	src: url("static/Manrope-Medium.ttf");
+}
