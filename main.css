@@ -4,22 +4,26 @@ html { font-size: 62.5%; }
 
 :root {
 	--black : #212121;
-	--red   : #bd4b4b;
+	--red   : #af4040;
 	--pink  : #efb7b7;
 	--lgrey : #eeeeee;
-	--dgrey : #c6c6c6;
+	--dgrey : #dadada;
+	--kgrey : #b2b2b2;
+	--blue  : #515e63;
 }
 
-/* header block */
+/* #header block */
 
 .header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
 	padding: 4rem 1rem 1rem 1rem;
 	width: 100%;
 	height: 10%;
+
 	background-color: white;
 }
 
@@ -32,7 +36,7 @@ html { font-size: 62.5%; }
 	box-shadow: 4px 3px 7px 4px var(--dgrey);
 }
 
-/* nav bar */
+/* #nav bar */
 
 .nav {
 	display: flex;
@@ -50,7 +54,7 @@ html { font-size: 62.5%; }
 	text-decoration: none;
 }
 
-/* blank space */
+/* #blank space */
 
 .blank-space {
 	width: 100%;
@@ -65,42 +69,46 @@ html { font-size: 62.5%; }
 	height: 2.5rem;
 }
 
-/* grid-container block */
+/* #grid-container block */
 
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat( 12, 1fr);
+
 	padding: 1rem;
 }
 
-/* main block */
+/* #main block */
 
 .main {
 	grid-column-start: 2;
 	grid-column-end: 9;
 }
 
-/* post section/block */
+/* #post section/block */
 
 .post-preview {
 	display: flex;
 	padding: 2rem;
 	width: 100%;
 	height: auto;
+
 	background-color: var(--lgrey);
+	border: solid 1px var(--dgrey);
 	border-radius: .3rem;
 }
 
-/* container for title, txt and btn */
+/* #container for title, txt and btn */
 
 .post-info {
 	padding: 0rem 1rem 0 2rem;
 }
 
-/* post content */
+/* #post content */
 
 .post-preview__title {
 	margin-bottom: 1rem;
+
 	font-family: 'Manrope Medium';
 	font-size: 1.8rem;
 }
@@ -113,6 +121,7 @@ html { font-size: 62.5%; }
 
 .post-preview__img {
 	width: 20vw;
+
 	border-radius: .3rem;
 }
 
@@ -124,17 +133,18 @@ html { font-size: 62.5%; }
 .post-preview__btn-more {
 	margin-top: 1rem;
 	padding: .4rem 1rem;
+	float: right;
+
 	color: whitesmoke;
 	background-color: var(--red);
 	border: transparent 1px;
-	float: right;
 }
 
 .btn-more:hover {
 	cursor: pointer;
 }
 
-/* contents block */
+/* #contents block */
 
 .contents {
 	grid-column-start: 10;
@@ -144,15 +154,18 @@ html { font-size: 62.5%; }
 	height: 50%;
 
 	background-color: var(--lgrey);
+	border: solid 1px var(--dgrey);
 	border-radius: .4rem;
 }
 
 .contents__title {
 	padding-bottom: 1rem;
 	width: 100%;
+
 	font-family: 'Manrope Medium';
 	font-size: 1.8rem;
 }
+
 
 .contents__list {
 	/*list-style-type: "\027A4";*/
@@ -161,18 +174,55 @@ html { font-size: 62.5%; }
 
 .contents__item {
 	margin: 0 0 .5rem 0;
+
 	font-family: 'Manrope Light';
 	font-size: 1.6rem;
 }
 
-/* footer block */
+/* #post-nav block */
+
+.post-nav {
+	grid-column-start: 2;
+	grid-column-end: 5;
+
+	display: flex;
+}
+
+.post-nav__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: .5rem;
+	width: 2.8rem;
+	height: 2.8rem;
+
+	font-family: "Manrope Light";
+	font-size: 1.6rem;
+	background-color: var(--lgrey);
+	border: solid 1px var(--dgrey);
+	border-radius: .2rem;
+}
+
+.post-nav__item--move{
+	border-color: var(--kgrey);
+	background-color: var(--dgrey);
+}
+
+.post-nav--m {
+	margin-top: 1rem;
+}
+
+/* #footer block */
 
 .footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	width: 100%;
 	height: 20vw;
+
 	background-color: var(--black);
 }
 
@@ -180,6 +230,7 @@ html { font-size: 62.5%; }
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	width: auto;
 }
 
