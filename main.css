@@ -36,7 +36,7 @@ html { font-size: 62.5%; }
 	box-shadow: 4px 3px 7px 4px var(--dgrey);
 }
 
-/* #nav bar */
+/* #nav block */
 
 .nav {
 	display: flex;
@@ -88,7 +88,9 @@ html { font-size: 62.5%; }
 /* #post section/block */
 
 .post-preview {
-	display: flex;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 20% 60% 20%;
 	padding: 2rem;
 	width: 100%;
 	height: auto;
@@ -98,13 +100,16 @@ html { font-size: 62.5%; }
 	border-radius: .3rem;
 }
 
-/* #container for title, txt and btn */
-
-.post-info {
-	padding: 0rem 1rem 0 2rem;
-}
-
 /* #post content */
+
+.post-preview__img {
+	grid-row-start: 1;
+	grid-row-end: 4;
+
+	width: 95%;
+
+	border-radius: .3rem;
+}
 
 .post-preview__title {
 	margin-bottom: 1rem;
@@ -119,12 +124,6 @@ html { font-size: 62.5%; }
 	text-align: justify;
 }
 
-.post-preview__img {
-	width: 20vw;
-
-	border-radius: .3rem;
-}
-
 .btn-more {
 	font-family: 'Manrope Regular';
 	border-radius: .4rem;
@@ -132,8 +131,10 @@ html { font-size: 62.5%; }
 
 .post-preview__btn-more {
 	margin-top: 1rem;
-	padding: .4rem 1rem;
-	float: right;
+	padding: .5rem 1rem;
+	width: fit-content;
+	height: fit-content;
+	margin-left: auto;
 
 	color: whitesmoke;
 	background-color: var(--red);
@@ -177,6 +178,10 @@ html { font-size: 62.5%; }
 
 	font-family: 'Manrope Light';
 	font-size: 1.6rem;
+}
+
+.contents__item--wrap {
+	display: none;
 }
 
 /* #post-nav block */

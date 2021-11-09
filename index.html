@@ -5,16 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>blog-design</title>
 	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 800px)">
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 480px)">
 	<link rel="stylesheet" href="fonts/fonts.css">
 </head>
 <body>
 	<header class="header header--p-sticky header--shadow">
 		<nav class="nav">
-			<div class="nav__item"><a href="" class="nav__a">Home</a></div>
-			<div class="nav__item"><a href="" class="nav__a">About</a></div>
-			<div class="nav__item"><a href="" class="nav__a">Sources</a></div>
-			<div class="nav__item"><a href="" class="nav__a">Contact</a></div>
-			<div class="nav__item"><a href="" class="nav__a">More</a></div>
+			<div class="nav__item nav__item--home"><a href="" class="nav__a">Home</a></div>
+			<div class="nav__item nav__item--about"><a href="" class="nav__a">About</a></div>
+			<div class="nav__item nav__item--src"><a href="" class="nav__a">Sources</a></div>
+			<div class="nav__item nav__item--contact"><a href="" class="nav__a">Contact</a></div>
+			<div class="nav__item nav__item--more"><a href="" class="nav__a">More</a></div>
 		</nav>
 	</header>
 	<div class="blank-space"></div>
@@ -22,37 +24,37 @@
 		<main class="main main--m">
 		<section class="post-preview">
 			<img  src="media/img/styra.png" alt="" class="post-preview__img">
-			<div class="post-info">
-				<div class="post-preview__title">Styracosausus 2.0 - <i>Satoshi Kamiya</i></div>
-			    <div class="post-preview__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quam voluptatibus voluptatum optio placeat nulla, architecto commodi praesentium saepe temporibus nihil beatae, ut facilis sint fugiat voluptate vero molestias nam!</div>
-			    <button class="btn-more post-preview__btn-more">Read more...</button>
-			</div>
+			<div class="post-preview__title">Styracosausus 2.0 - <i>Satoshi Kamiya</i></div>
+			<div class="post-preview__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt quam voluptatibus voluptatum optio placeat nulla, architecto commodi praesentium saepe temporibus nihil beatae, ut facilis sint fugiat voluptate vero molestias nam!</div>
+			<button class="btn-more post-preview__btn-more">Read more...</button>
 		</section>
 		<div class="blank-space blank-space--main"></div>
 		<section class="post-preview">
 			<img  src="media/img/helmet.jpg" alt="" class="post-preview__img">
-			<div class="post-info">
 				<div class="post-preview__title">Samurai helmet - <i>Jun Maekawa</i></div>
 			    <div class="post-preview__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cum eius repellendus saepe quibusdam dolorum officia, asperiores cupiditate placeat eos ducimus obcaecati odit ea quis omnis expedita deserunt culpa maiores!</div>
 			    <button class="btn-more post-preview__btn-more">Read more...</button>
-			</div>
 		</section>
 		<div class="blank-space blank-space--main"></div>
 		<section class="post-preview">
 			<img  src="media/img/clover.jpg" alt="" class="post-preview__img">
-			<div class="post-info">
-				<div class="post-preview__title">Clover Kusudama - <i>Maria Sinayskaya</i></div>
-			    <div class="post-preview__txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae cupiditate ab facere officiis, voluptatum repudiandae sunt ducimus possimus modi dignissimos blanditiis saepe expedita. Culpa dolorem earum laudantium, nisi reprehenderit.</div>
-			    <button class="btn-more post-preview__btn-more">Read more...</button>
-			</div>
+		    <div class="post-preview__title">Clover Kusudama - <i>Maria Sinayskaya</i></div>
+			<div class="post-preview__txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, recusandae cupiditate ab facere officiis, voluptatum repudiandae sunt ducimus possimus modi dignissimos blanditiis saepe expedita. Culpa dolorem earum laudantium, nisi reprehenderit.</div>
+			<button class="btn-more post-preview__btn-more">Read more...</button>
 		</section>
 	</main>
 	<aside class="contents">
 		<div class="contents__title">Contents</div>
-		    <ul class="contents__list">
+		<ul class="contents__list">
 			<li class="contents__item">2021</li>
 			<li class="contents__item">2020</li>
 			<li class="contents__item">2019</li>
+			<div class="contents__item contents__item--wrap">
+				<div class="contents-svg"></div>
+				<!-- <svg height="1.6rem" width="1.6rem">
+                    <path d="M0,0 L16,0 L8,16 Z" style="fill: black;" />
+                </svg> -->
+			</div>
 		</ul>
 	</aside>
 	<section class="post-nav post-nav--m">
@@ -70,7 +72,7 @@
 	<footer class="footer">
 		<section class="socials">
 			<a href=""><img src="media/img/logo-twitter.png" alt="" class="socials__logo"></a>
-			<a href=""><img src="media/img/logo-github.png" alt="" class="socials__logo"></a>
+			<a href="https://github.com/agthus/4gthus.github.io" target="_blank"><img src="media/img/logo-github.png" alt="" class="socials__logo"></a>
 			<a href=""><img src="media/img/logo-instagram.png" alt="" class="socials__logo"></a>
 		</section>
 		<small class="copy"></small>
