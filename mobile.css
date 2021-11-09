@@ -34,13 +34,6 @@
 
 	margin: 0;
 }
-.contents-svg {
-	width: 1.6rem;
-	height: 1.6rem;
-
-	clip-path: path('M 0 0 L 16,0 L 8,16 Z');
-	background-color: black;
-}
 
 /* #main block */
 
